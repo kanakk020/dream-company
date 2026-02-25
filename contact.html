@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Contact Nexora — Get in touch with our team for sales, support, or partnerships." />
+  <title>Contact — Nexora</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;500;600;700;800&family=DM+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300&display=swap" rel="stylesheet" />
+</head>
+<body>
+
+  <!-- NAV -->
+  <header>
+    <nav class="navbar">
+      <a href="index.html" class="nav-logo" aria-label="Nexora home">
+        <span>N</span><span>e</span><span>x</span><span>o</span><span>r</span><span>a</span>
+      </a>
+      <input type="checkbox" id="hamburger-check" class="hamburger-check" aria-hidden="true" />
+      <label for="hamburger-check" class="hamburger-icon" aria-label="Toggle navigation">
+        <span></span><span></span><span></span>
+      </label>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html" class="active">Contact</a></li>
+        <li><a href="contact.html" class="nav-cta">Get Started</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+
+    <!-- PAGE HEADER -->
+    <section class="page-header" aria-label="Contact page header">
+      <div class="page-header-grid" aria-hidden="true"></div>
+      <div class="page-header-orb" aria-hidden="true"></div>
+      <p class="page-header-label green">Get In Touch</p>
+      <h1 class="page-header-title">We'd love to<br/>hear from you</h1>
+      <p class="page-header-sub">
+        Whether it's a quick question, a partnership proposal, or you're ready to get started — our team responds within 24 hours.
+      </p>
+    </section>
+
+    <div class="divider"></div>
+
+    <!-- CONTACT FORM + INFO -->
+    <section class="contact-section" aria-label="Contact Form">
+      <div class="contact-grid">
+
+        <!-- Left: Info -->
+        <aside class="contact-info">
+          <h2>Let's start a conversation</h2>
+          <p>Fill out the form and one of our specialists will reach out within one business day. Prefer a direct line? Find us below.</p>
+
+          <div class="contact-details">
+            <div class="contact-item ci-blue">
+              <div class="contact-item-icon" aria-hidden="true">📍</div>
+              <div>
+                <strong style="color:var(--text-primary); display:block; margin-bottom:2px;">Headquarters</strong>
+                1600 Amphitheatre Pkwy, Mountain View, CA 94043
+              </div>
+            </div>
+            <div class="contact-item ci-green">
+              <div class="contact-item-icon" aria-hidden="true">📧</div>
+              <div>
+                <strong style="color:var(--text-primary); display:block; margin-bottom:2px;">Email</strong>
+                hello@nexora.io
+              </div>
+            </div>
+            <div class="contact-item ci-red">
+              <div class="contact-item-icon" aria-hidden="true">📞</div>
+              <div>
+                <strong style="color:var(--text-primary); display:block; margin-bottom:2px;">Phone</strong>
+                +1 (800) NEX-ORA1
+              </div>
+            </div>
+          </div>
+
+          <p style="font-size:.72rem; font-weight:700; color:var(--text-muted); text-transform:uppercase; letter-spacing:1.5px; margin-bottom:12px;">Follow us</p>
+          <div class="social-icons" role="list">
+            <a href="#" class="social-icon si-blue"   aria-label="Twitter"  role="listitem">𝕏</a>
+            <a href="#" class="social-icon si-green"  aria-label="LinkedIn" role="listitem">in</a>
+            <a href="#" class="social-icon si-yellow" aria-label="YouTube"  role="listitem">▶</a>
+            <a href="#" class="social-icon si-red"    aria-label="GitHub"   role="listitem">⌥</a>
+          </div>
+
+          <div class="office-hours-note">
+            <strong>⏰ Office Hours</strong>
+            <p>Monday – Friday: 9:00 AM – 6:00 PM PST<br/>Saturday: 10:00 AM – 2:00 PM PST</p>
+          </div>
+        </aside>
+
+        <!-- Right: Glass Form -->
+        <div class="contact-form-wrap">
+          <p class="form-title">Send us a message ✉️</p>
+
+          <form method="POST" action="#" novalidate aria-label="Contact form">
+
+            <div class="form-row">
+              <div class="form-group">
+                <label for="first-name">First Name</label>
+                <input type="text" id="first-name" name="first_name" class="form-input" placeholder="Jane" autocomplete="given-name" required />
+              </div>
+              <div class="form-group">
+                <label for="last-name">Last Name</label>
+                <input type="text" id="last-name" name="last_name" class="form-input" placeholder="Smith" autocomplete="family-name" required />
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label for="email">Email Address</label>
+              <input type="email" id="email" name="email" class="form-input" placeholder="jane@company.com" autocomplete="email" required />
+            </div>
+
+            <div class="form-group">
+              <label for="company">Company</label>
+              <input type="text" id="company" name="company" class="form-input" placeholder="Acme Corp" autocomplete="organization" />
+            </div>
+
+            <div class="form-group">
+              <label for="inquiry">Inquiry Type</label>
+              <select id="inquiry" name="inquiry" class="form-select">
+                <option value="" disabled selected>Select a topic…</option>
+                <option value="sales">Sales &amp; Pricing</option>
+                <option value="support">Technical Support</option>
+                <option value="partnership">Partnership</option>
+                <option value="press">Press &amp; Media</option>
+                <option value="careers">Careers</option>
+                <option value="other">Other</option>
+              </select>
+            </div>
+
+            <div class="form-group">
+              <label for="message">Message</label>
+              <textarea id="message" name="message" class="form-textarea" placeholder="Tell us about your project, goals, or questions…" required></textarea>
+            </div>
+
+            <button type="submit" class="btn btn-primary form-submit">Send Message →</button>
+
+          </form>
+        </div>
+
+      </div>
+    </section>
+
+    <div class="divider"></div>
+
+    <!-- MAP -->
+    <section class="map-section" aria-label="Office Location">
+      <div class="map-wrap">
+        <p class="map-label">Find us</p>
+        <div class="map-placeholder" role="img" aria-label="Map placeholder — replace with Google Maps iframe">
+          <div class="map-placeholder-inner">
+            <div class="map-pin" aria-hidden="true">📍</div>
+            <p class="map-pin-label">Nexora HQ — Mountain View, CA</p>
+            <p class="map-pin-sub">Replace with &lt;iframe src="https://maps.google.com/..."&gt;</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div class="divider"></div>
+
+    <!-- FAQ -->
+    <section class="section" style="background:var(--surface-1);" aria-label="FAQ">
+      <div class="section-center">
+        <p class="section-label">Quick Answers</p>
+        <h2 class="section-title">Frequently asked <span class="highlight">questions</span></h2>
+      </div>
+      <div class="faq-grid">
+        <div class="faq-card">
+          <h3>How fast do you respond?</h3>
+          <p>We aim to respond to all inquiries within 24 hours on business days. Priority support customers receive a 4-hour SLA.</p>
+        </div>
+        <div class="faq-card">
+          <h3>Is there a free trial?</h3>
+          <p>Yes — all products come with a 30-day free trial, no credit card required. Full-featured access from day one.</p>
+        </div>
+        <div class="faq-card">
+          <h3>Do you offer enterprise pricing?</h3>
+          <p>Absolutely. Enterprise plans include custom contracts, dedicated support, and volume discounts. Contact our sales team.</p>
+        </div>
+        <div class="faq-card">
+          <h3>Where is my data stored?</h3>
+          <p>You choose your data residency region. We support EU, US, APAC, and multi-region configurations for compliance needs.</p>
+        </div>
+      </div>
+    </section>
+
+    <div class="divider"></div>
+
+    <!-- CTA -->
+    <section class="cta-section" aria-label="Call to Action">
+      <div class="cta-tag">🎉 &nbsp;No Credit Card Required</div>
+      <h2 class="cta-title">Not ready to commit <em>yet</em>?</h2>
+      <p class="cta-sub">Start with a free account and explore every feature at your own pace. No pressure. No expiry.</p>
+      <div class="cta-actions">
+        <a href="#" class="btn btn-primary">Create Free Account</a>
+        <a href="about.html" class="btn btn-secondary">View Pricing →</a>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="footer-top">
+      <div class="footer-brand">
+        <div class="nav-logo">
+          <span>N</span><span>e</span><span>x</span><span>o</span><span>r</span><span>a</span>
+        </div>
+        <p>Organizing the world's information — making it universally accessible, useful, and safe. One product at a time.</p>
+        <div class="footer-socials">
+          <span class="footer-social-btn" aria-label="Twitter">𝕏</span>
+          <span class="footer-social-btn" aria-label="LinkedIn">in</span>
+          <span class="footer-social-btn" aria-label="GitHub">⌥</span>
+          <span class="footer-social-btn" aria-label="YouTube">▶</span>
+        </div>
+      </div>
+      <div class="footer-col">
+        <h4>Products</h4>
+        <ul>
+          <li><a href="#">Nexora AI</a></li>
+          <li><a href="#">Nexora Cloud</a></li>
+          <li><a href="#">Nexora Shield</a></li>
+          <li><a href="#">Nexora Analytics</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Company</h4>
+        <ul>
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="#">Careers</a></li>
+          <li><a href="#">Press</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Legal</h4>
+        <ul>
+          <li><a href="#">Privacy Policy</a></li>
+          <li><a href="#">Terms of Service</a></li>
+          <li><a href="#">Cookie Policy</a></li>
+          <li><a href="#">Security</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2025 Nexora Inc. All rights reserved.</p>
+      <div class="footer-dots" aria-hidden="true">
+        <span></span><span></span><span></span><span></span>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>
